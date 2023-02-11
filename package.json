@@ -1,0 +1,29 @@
+{
+  "name": "namaste_react_live",
+  "version": "1.0.0",
+  "description": "This is a live learning",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepakuma/namaste-react.git"
+  },
+  "author": "Deepa Kumari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepakuma/namaste-react/issues"
+  },
+  "homepage": "https://github.com/deepakuma/namaste-react#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "browserList": [
+    "last 2 versions"
+  ]
+}
