@@ -11,10 +11,36 @@
  dist folder keep the files minified for parcel. 
  npx parcel build index.html -  it is for production build
  npx parcel index.html - for development build
- { hot module replacement (HMR), File watcher algorithm, bundling, minify, cleaning our code, manages dev and production build, super fast build algorithm, Image optimisation, caching while development, compression, compatible with older version of browser, HTTPS on dev- parcel(npx parcel index.html --https), manage port number, consistent hashing algorithm, zero config, transitive dependencies,create a server to run } - parcel
+ { hot module replacement (HMR), File watcher algorithm, bundling, minify, cleaning our code, manages dev and production build, super fast build algorithm, Image optimisation, caching while development, compression, compatible with older version of browser, HTTPS on dev- parcel(npx parcel index.html --https), manage port number, consistent hashing algorithm, zero config, transitive dependencies,create a server to run, tree shaking } - parcel
  We should push .parcel-cache in gitignore
  Anything that we can generate on server will be put inside gitignore as we can generate on server
  transitive dependencies are dependencies where parcel 
  When we are building a production ready app we need to do a lots of things that are written in line 14 and we can't do that alone we need some dependecies on it and those dependecies are also dependent on other things. 
  BrowserList is used to make web compatible with browsers.
  Script type in your html, We have to used type = "module" so that it import file. // Mozilla check there
+Git command to push repository for the first time.
+git init
+git add .
+git commit -m "Add existing project files to Git"
+git remote add origin https://github.com/cameronmcnz/example-website.git
+git push -u -f origin master
+ Pollyfill is a code which is the replacement for the newer version of code 
+ Babel 
+ES6 is newer version of javascript
+Babel convert the code with using BrowserList. Babel is node package. Taking some code and replacing, spitting some code
+Tree shaking mean removing unwanted code.
+create react app uses webpack and babel.
+We have added script in package.json for start and build through parcel
+babel plugin transform remove console- it removes our console log
+Always have to gives keys to my component children, give keys passing as a props, unique
+render means updating something in the DOM
+react.createElement is creating an object => HTML(DOM) (which then converts into HTML and render in the DOM)
+JSX - javascript xml (not documented though), It is a HTML like syntax but it is not HTML inside javascript
+In JSX we use camel notation variable name. It uses React.createElement behind the scene, readability, maintain, developer friendly
+Babel understand the html like syntax code and convert it to readable for javascript
+-- read babel 
+Name of the components starts with the capital letter, it is conventional but not mandatory.
+Functional component is a normal function.
+react element and react component, react element render (heading) or {heading} when calling and react component render (<heading />) or {heading()} when calling
+We can write any piece of javascript in {}.
+<Title />- this is component composition- use of component inside of a component 
