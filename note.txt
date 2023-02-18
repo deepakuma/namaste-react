@@ -43,4 +43,24 @@ Name of the components starts with the capital letter, it is conventional but no
 Functional component is a normal function.
 react element and react component, react element render (heading) or {heading} when calling and react component render (<heading />) or {heading()} when calling
 We can write any piece of javascript in {}.
-<Title />- this is component composition- use of component inside of a component 
+<Title />- this is component composition- use of component inside of a component
+JSX expressions must have only parent element
+React.Fragment -  It is a component that is exported by the react. <React.Fragment><React.Fragment/>. It can also be written as empty tags - <></>. It does not be inside html,  you can't style it.
+inline style - style = "background":"red";
+Inline style in react - style = {styelObj}
+Config driven UI - depends on config from backend API
+optional chaining - ?.
+props - whartever you pass over calling a functional component as an attribute is known as props inside react
+You pass an argument and receive a parameter - function fn (param1,param2){
+
+}
+and 
+fn(arg1, arg2);
+destructuring the object like - props to {restaurant}
+...data - spread operator
+map is the best way to do functional programming
+Virtual dom - We keep a representation of a DOM with us in our code. 
+We need virtual dom for something known as reconciliation. It is an algorithm that react uses to diff one trees with another trees. Between actual DOM and virtual DOM. It rerenders only diff part.
+React Fiber- New reconciliation engine, it came in react 16, it is responsible for diff.
+Why don't we use index as a key? Never use your index as key. If the order of the items may change. This can negatively impact performance and may cause issues with component state.
+no key <<<<<<< index key <<<< unique key(best practice) 
