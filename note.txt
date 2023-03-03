@@ -64,3 +64,16 @@ We need virtual dom for something known as reconciliation. It is an algorithm th
 React Fiber- New reconciliation engine, it came in react 16, it is responsible for diff.
 Why don't we use index as a key? Never use your index as key. If the order of the items may change. This can negatively impact performance and may cause issues with component state.
 no key <<<<<<< index key <<<< unique key(best practice) 
+We need to wrap our code in a proper modular files. 
+File structure - We can keep however we want. But we can categories to make a distribution.
+export default title
+export const title
+import {title} from "./component/header"; - extracting from the header files - named import
+import title from "./component/title"; - default import
+import * obj from "./component/title"; obj.Title
+You can use to write header.jsx too for file name
+React uses one way data binding, we uses onChange method to make any changes from UI side or it ll make no changes.
+Every component in React maintains a state, so you can put variable into the state.
+useState Hook, A hook is just a normal function. It is to create local state variable, import from react library using named variable, it returns the array. returns = [variable name, function to update the variable]
+What is state? What is Hooks? What is useState? 
+We need state variable, whenever variable changes react will not know that it have to rerender. React doesn't know about our variable. You want your variable to sync with the UI , you need to use your state variable.
