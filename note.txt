@@ -77,3 +77,16 @@ Every component in React maintains a state, so you can put variable into the sta
 useState Hook, A hook is just a normal function. It is to create local state variable, import from react library using named variable, it returns the array. returns = [variable name, function to update the variable]
 What is state? What is Hooks? What is useState? 
 We need state variable, whenever variable changes react will not know that it have to rerender. React doesn't know about our variable. You want your variable to sync with the UI , you need to use your state variable.
+Diff algorithm, current tree is compared with updated tree.
+React is fast because of its fast DOM manipulation.
+Monolith - one big projects.
+Microservices- easier to test, separation of concern(SOC).
+useEffect- you use this function by passing another function in it. This another function is a callback function. useEffect(()=>{}); you call this useEffect function giving two parameter one iscall back function and another is dependency array.
+Empty dependency array => once after render
+dep array [searchText] => once after initial render and everytime my search test changes.
+Shimmer effect
+Conditional rendering
+if restaurant is empty => shimmer UI
+if restaurant has data => actual data UI
+javascript expression work in {}. - ((a=10), console.log(a))// expression
+JS Expression and Statement
